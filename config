@@ -1,0 +1,110 @@
+# 窗口最大化是两边撑满,而上面留出20个(像素?),下面相应的留出25
+EwmhBaseStruts 0 0 0 25 
+
+#使用EdgeScroll命令禁止flipping pages（鼠标不会因为接近屏幕边缘而进入相近的桌面）
+EdgeScroll 0 0 
+
+# 用来设定桌面的大小,这里只设置了一个桌面,但是有8页
+DeskTopSize 4x1
+
+DefaultFont "xft:WenQuanYi Micro Hei Mono:size=10"
+ImagePath +:/usr/local/share/icons/hicolor:/usr/local/share/fvwm/pixmaps
+
+Style * ClickToFocus,ClickToFocusPassesClick
+Style * MouseFocusClickRaises
+Style * SmartPlacement
+
+
+DestroyFunc StartFunction
+AddToFunc StartFunction       
++ I Module FvwmButtons MainPanel
++ I Module FvwmAuto 500 Raise Nop
++ I Module FvwmAnimate
++ I Module FvwmTaskBar
+
+DestroyMenu MenuFvwmRoot
+AddToMenu MenuFvwmRoot
+#
++ "Rxvt-Unicode" Exec exec urxvt
++ "Opera" Exec exec opera
+
++ "" Nop
++ "Edit config" Exec exec geany ~/.fvwm/config
++ "" Nop
++ %24x24/l33t_DES_shutdown.png%"Quit" Quit
++ %24x24/l33t_UNK_dcast.png%"Restart Fvwm2" Restart
+
+
+####################FvwmTaskBar任务条######################
+
+Style FvwmTaskBar NoTitle, WindowListSkip, CirculateSkip, Sticky, BorderWidth 1, NoHandles, StaysOnBottom 
+Style FvwmTaskBar NeverFocus, Layer 0
+
+DestroyModuleConfig FvwmTaskBar: * 
+*FvwmTaskBar: Geometry -0-0 #位置
+*FvwmTaskBar: Rows 1 
+*FvwmTaskBar: Font "xft:WenQuanYi Micro Hei Mono:size=10"
+*FvwmTaskBar: SelFont "xft:WenQuanYi Micro Hei Mono:size=10" 
+*FvwmTaskBar: Colorset 0 
+*FvwmTaskBar: AutoStick 
+*FvwmTaskBar: UseSkipList 
+*FvwmTaskBar: PageOnly 
+*FvwmTaskBar: ShowTips 
+*FvwmTaskBar: TipsColorset 0 
+*FvwmTaskBar: StartName LoveJuan
+*FvwmTaskBar: StartMenu MenuFvwmRoot mouse -100p -104m 
+#*FvwmTaskBar: Pixmap /home/gkp/.fvwm/image/title-active.png
+*FvwmTaskBar: NoBrightFocus 
+*FvwmTaskBar: 3DFvwm 
+*FvwmTaskBar: MailCheck 0 
+#下面五段是关于颜色的设定。（背景，黑色。字体，白色）
+*FvwmTaskBar: Back darkgreen 
+*FvwmTaskBar: Fore white
+*FvwmTaskBar: FocusFore cornsilk
+*FvwmTaskBar: IconBack #9ED048
+*FvwmTaskBar: IconFore white 
+*FvwmTaskBar: ClockFormat %Y-%m-%d %H:%M
+ #点击“开始按钮”，菜单弹出的位置。
+*FvwmTaskBar: Action Click 3 Menu MenuFvwmWindowOps mouse -1p -100m
+*FvwmTaskBar: Button NoTitle , Icon 16x16/apps/geany.png, Action (Mouse 1) Exec exec geany16
+###########窗口样式#############
+Style * BorderWidth 0, HandleWidth 1
+
+
+################标题栏按钮##############
+#TitleStyle AllActive TiledPixmap bc.xpm ( ColorSet 8 -- Flat )
+#TitleStyle AllInactive TiledPixmap bc.xpm ( ColorSet 8 -- Flat )
+TitleStyle AllActive (HGradient 200 darkgreen #9ED048 -- Flat)
+TitleStyle AllInactive (Solid gray -- Flat)
+
+TitleStyle Height 22
+
+ButtonStyle All Simple -- UseTitleStyle
+ButtonStyle All -- Flat
+
+AddButtonStyle 2 /
+ActiveUp (Pixmap close.png -- flat) /
+ActiveDown (Pixmap close.png -- flat) /
+Inactive (Pixmap close.png -- flat)
+AddButtonStyle 4 /
+ActiveUp (Pixmap max.png -- flat) /
+ActiveDown (Pixmap max.png -- flat) /
+Inactive (Pixmap max.png -- flat)
+AddButtonStyle 6 /
+ActiveUp (Pixmap min.png -- flat) /
+ActiveDown (Pixmap min.png -- flat) /
+Inactive (Pixmap min.png -- flat)
+
+
+#按钮的样式
+ButtonStyle 2 Inactive Vector 4 30x30@3 60x60@3 60x30@4 30x60@3 -- Flat
+ButtonStyle 6 Inactive Vector 7 30x30@3 30x60@3 60x60@3 60x30@3 30x30@3 30x35@3 60x35@3 -- Flat
+ButtonStyle 4 Inactive Vector 5 30x60@3 60x60@3 60x50@3 30x50@3 30x60@3 -- Flat
+
+ButtonStyle 2 active Vector 4 30x30@3 60x60@3 60x30@4 30x60@3 -- Flat
+ButtonStyle 4 active Vector 7 30x30@3 30x60@3 60x60@3 60x30@3 30x30@3 30x35@3 60x35@3 -- Flat
+ButtonStyle 6 active Vector 5 30x60@3 60x60@3 60x50@3 30x50@3 30x60@3 -- Flat
+
+Mouse 1 2 A Close 
+Mouse 1 6 A Iconify 
+Mouse 1 4 A Maximize
