@@ -1,0 +1,20 @@
+#
+# Minimal torrc so tor will work out of the box
+#
+User tor
+PIDFile /var/run/tor/tor.pid
+Log notice syslog
+DataDirectory /var/lib/tor/data
+
+CircuitBuildTimeout 5
+KeepalivePeriod 60
+NewCircuitPeriod 15
+NumEntryGuards 8
+
+UseBridges 1
+
+ bridge 62.75.147.218:3691
+ bridge 205.185.120.236:23
+ bridge 87.79.220.147:443
+
+
