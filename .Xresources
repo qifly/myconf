@@ -1,17 +1,17 @@
-!!$HOME/.Xdefaults
 URxvt.geometry:100x40
 URxvt.multichar_encoding:utf-8
+URxvt.perl-ext-common:default,tabbed,matcher
 
-URxvt.perl-ext-common:default,matcher,tabbed
+URxvt*termName: rxvt-unicode
 
 URxvt.preeditType:Root
-!!调整此处设置输入法
+##调整此处设置输入法
 URxvt.inputMethod:fcitx
-!!颜色设置
+##颜色设置
 URxvt.depth:32
-!!中括号内数表示透明度
+##中括号内数表示透明度
 URxvt.background: [90]#000000
-URxvt.foreground:  #ffffff
+URxvt.foreground:#ffffff
 URxvt.colorBD:Gray95
 URxvt.colorUL:Green
 URxvt.color1:Red2
@@ -22,25 +22,24 @@ URxvt.color10:Green2
 URxvt.color12:DodgerBlue
 URxvt.color14:Cyan2
 URxvt.color15:Gray95
-!!URL操作
+##URL操作
 URxvt.urlLauncher:opera
 URxvt.matcher.button:1
-Urxvt.perl-ext-common:matcher
-!!滚动条设置
+##滚动条设置
 URxvt.scrollBar:True
 URxvt.scrollBar_right:True
 URxvt.scrollBar_floating:False
 URxvt.scrollstyle:Next
-!!滚屏设置
+##滚屏设置
 URxvt.mouseWheelScrollPage:True
 URxvt.scrollTtyOutput: False
 URxvt.scrollWithBuffer: True
 URxvt.scrollTtyKeypress: True
-!!光标闪烁
+##光标闪烁
 URxvt.cursorBlink:True
 URxvt.saveLines:5000
-!!边框
+##边框
 URxvt.borderLess:      False
-!!字体设置
+##字体设置
 URxvt.font:xft:WenQuanYi Micro Hei Mono:pixelsize=14:style=Regular:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:style=Regular:antialias=true
 URxvt.boldfont:xft:WenQuanYi Micro Hei Mono:pixelsize=14:style=Bold:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:style=Bold:antialias=true
