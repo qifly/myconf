@@ -15,6 +15,7 @@ function FindProxyForURL(url, host) {
 
   if(host=="ow.ly") return PROXY;
   if(host=="paper.li") return PROXY;
+  if(host=="t.co") return PROXY;
   return DEFAULT;
 }
 
