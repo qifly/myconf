@@ -7,6 +7,7 @@ set termencoding=utf-8
 
 set nocompatible
 set number
+set autochdir
 
 filetype on
 filetype plugin on
