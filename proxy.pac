@@ -13,10 +13,14 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"chinagfw.org")) return PROXY;
   if(dnsDomainIs(host,"geeksjoy.com")) return PROXY;
   if(dnsDomainIs(host,"wordpress.com")) return PROXY;
+  if(dnsDomainIs(host,"upubuntu.com")) return PROXY;
+  if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
 
   if(host=="ow.ly") return PROXY;
+  if(host=="ht.ly") return PROXY;
   if(host=="paper.li") return PROXY;
   if(host=="t.co") return PROXY;
+  if(host=="j.mp") return PROXY;
   return DEFAULT;
 }
 
