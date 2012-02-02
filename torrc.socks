@@ -1,0 +1,29 @@
+#
+# Minimal torrc so tor will work out of the box
+#
+User tor
+PIDFile /var/run/tor/tor.pid
+Log notice syslog
+DataDirectory /var/lib/tor/data
+
+CircuitBuildTimeout 10
+KeepalivePeriod 60
+NewCircuitPeriod 15
+NumEntryGuards 8
+
+ExcludeNodes {CN}
+ExcludeNodes {cn}
+ExcludeNodes {HK}
+ExcludeNodes {hk}
+ExcludeNodes {MO}
+ExcludeNodes {mo}
+ExcludeNodes andrewgao,distro,fgsinternet,flyingboy,frland,gtjaet,cnrss,yt1n1rt,nouser,qltor,waq,wondering
+
+#UseBridges 1
+#UpdateBridgesFromAuthority 1
+
+Socks5Proxy 188.40.51.231:8080
+
+#bridge 93.200.230.131:443
+#bridge 31.16.229.89:9001
+#bridge 198.180.167.222:45321
