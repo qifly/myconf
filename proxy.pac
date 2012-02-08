@@ -6,10 +6,11 @@ function FindProxyForURL(url, host) {
   var DEFAULT = "DIRECT";
 
 /*google*/
-  if(dnsDomainIs(host,".blogspot.com")) return PROXY;
-  if(dnsDomainIs(host,".appspot.com")) return PROXY;
+  if(dnsDomainIs(host,"blogspot.com")) return PROXY;
+  if(dnsDomainIs(host,"appspot.com")) return PROXY;
   if(host=="groups.google.com") return PROXY;
   if(host=="plus.google.com") return PROXY;
+  if(host=="docs.google.com") return PROXY;
 /*end google*/
 
   if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
@@ -22,6 +23,7 @@ function FindProxyForURL(url, host) {
 /*end twitter*/
 
   if(dnsDomainIs(host,"ytimg.com")) return PROXY;
+  if(host=="www.youtube.com") return PROXY;
   if(shExpMatch(url,"*cache*.youtube.com*")) return PROXY;
 /*  shExpMatch(url,"*.blogspot.com*")) return PROXY;  */
   
