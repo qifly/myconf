@@ -8,6 +8,8 @@ function FindProxyForURL(url, host) {
 /*google*/
   if(dnsDomainIs(host,".blogspot.com")) return PROXY;
   if(dnsDomainIs(host,".appspot.com")) return PROXY;
+  if(host=="groups.google.com") return PROXY;
+  if(host=="plus.google.com") return PROXY;
 /*end google*/
 
   if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
@@ -33,6 +35,8 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
   if(dnsDomainIs(host,"www.kerneloops.org")) return PROXY;
 
+  if(host=="feeds.feedburner.com") return PROXY;
+  if(host=="goo.gl") return PROXY;
   if(host=="ow.ly") return PROXY;
   if(host=="ht.ly") return PROXY;
   if(host=="paper.li") return PROXY;
