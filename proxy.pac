@@ -11,6 +11,7 @@ function FindProxyForURL(url, host) {
   if(host=="groups.google.com") return PROXY;
   if(host=="plus.google.com") return PROXY;
   if(host=="docs.google.com") return PROXY;
+  if(host=="feedproxy.google.com") return PROXY;
 /*end google*/
 
   if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
@@ -34,10 +35,14 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"geeksjoy.com")) return PROXY;
   if(dnsDomainIs(host,"wordpress.com")) return PROXY;
   if(dnsDomainIs(host,"upubuntu.com")) return PROXY;
+  if(dnsDomainIs(host,"thepiratebay.se")) return PROXY;
+  if(dnsDomainIs(host,"thepiratebay.org")) return PROXY;
+
   if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
   if(dnsDomainIs(host,"www.kerneloops.org")) return PROXY;
 
   if(host=="feeds.feedburner.com") return PROXY;
+
   if(host=="goo.gl") return PROXY;
   if(host=="ow.ly") return PROXY;
   if(host=="ht.ly") return PROXY;
