@@ -16,7 +16,7 @@ function FindProxyForURL(url, host) {
 
   if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
   if(dnsDomainIs(host,"freenuts.com")) return PROXY;
-
+/* if(dnsDomainIs(host,"binhoster.com")) return PROXY;*/
 /*twitter*/  
   if(dnsDomainIs(host,"twimg.com")) return PROXY;
   if(dnsDomainIs(host,"twitter.com")) return PROXY;

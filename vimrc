@@ -1,4 +1,4 @@
-colorscheme gentooish  "gentooish color 
+colorscheme spring  "gentooish color 
 
 "config for encodings
 set encoding=utf-8
@@ -14,8 +14,11 @@ filetype plugin on
 syntax on
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+"expandtab to convert tab to space
+"this is important while writing code in python
+set expandtab
 
 set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 11
 set tags+=~/.vim/systags
