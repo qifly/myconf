@@ -14,9 +14,6 @@ function FindProxyForURL(url, host) {
   if(host=="feedproxy.google.com") return PROXY;
 /*end google*/
 
-  if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
-  if(dnsDomainIs(host,"freenuts.com")) return PROXY;
-/* if(dnsDomainIs(host,"binhoster.com")) return PROXY;*/
 /*twitter*/  
   if(dnsDomainIs(host,"twimg.com")) return PROXY;
   if(dnsDomainIs(host,"twitter.com")) return PROXY;
@@ -27,7 +24,10 @@ function FindProxyForURL(url, host) {
   if(host=="www.youtube.com") return PROXY;
   if(shExpMatch(url,"*cache*.youtube.com*")) return PROXY;
 /*  shExpMatch(url,"*.blogspot.com*")) return PROXY;  */
-  
+
+  if(dnsDomainIs(host,"wikimedia.org")) return PROXY;
+  if(dnsDomainIs(host,"freenuts.com")) return PROXY;
+  if(dnsDomainIs(host,"chinadigitaltimes.net")) return PROXY;
   if(dnsDomainIs(host,"sysresccd.org")) return PROXY;
   if(dnsDomainIs(host,"torproject.org")) return PROXY;
 
