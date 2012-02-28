@@ -6,15 +6,21 @@ PIDFile /var/run/tor/tor.pid
 Log notice syslog
 DataDirectory /var/lib/tor/data
 
-CircuitBuildTimeout 5
+CircuitBuildTimeout 10
 KeepalivePeriod 60
 NewCircuitPeriod 15
 NumEntryGuards 8
 
-UseBridges 1
+ExcludeNodes {CN},{HK},{MO},{IR},{RU}
 
- bridge 62.75.147.218:3691
- bridge 205.185.120.236:23
- bridge 87.79.220.147:443
+ExitNodes {JP},{US},{CA}
+StrictNodes 1
 
+#UseBridges 1
+#UpdateBridgesFromAuthority 1
 
+Socks5Proxy 188.40.51.231:8080
+
+#bridge 96.228.39.133:4433
+#bridge 79.225.49.115:443
+#bridge 87.169.234.92:9001
