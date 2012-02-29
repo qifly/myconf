@@ -1,8 +1,9 @@
-#
-# Minimal torrc so tor will work out of the box
-#
 User tor
 PIDFile /var/run/tor/tor.pid
+
+SocksPort 9050 
+SocksListenAddress 127.0.0.1
+
 Log notice syslog
 DataDirectory /var/lib/tor/data
 
@@ -12,14 +13,17 @@ NewCircuitPeriod 15
 NumEntryGuards 8
 
 ExcludeNodes {CN},{HK},{MO},{IR},{RU},{KP}
-ExitNodes {JP},{US},{DE},{FR},{NL},{SE}
+ExitNodes {JP},{US},{CA},{DE},{FR},{NL},{SE}
 StrictNodes 1
 
-#UseBridges 1
-#UpdateBridgesFromAuthority 1
 
-Socks5Proxy 188.40.51.231:8080
+UseBridges 1
+ClientTransportPlugin obfs2 exec /usr/bin/obfsproxy --managed
+UpdateBridgesFromAuthority 1
 
-#bridge 96.228.39.133:4433
-#bridge 79.225.49.115:443
-#bridge 87.169.234.92:9001
+#Socks5Proxy 188.40.51.231:8080
+
+Bridge obfs2 85.214.131.213:1051
+Bridge obfs2 143.215.129.51:35777
+Bridge obfs2 106.187.49.193:53824
+Bridge obfs2 128.31.0.34:1051
