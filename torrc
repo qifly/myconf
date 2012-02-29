@@ -11,9 +11,8 @@ KeepalivePeriod 60
 NewCircuitPeriod 15
 NumEntryGuards 8
 
-ExcludeNodes {CN},{HK},{MO},{IR},{RU}
-
-ExitNodes {JP},{US},{CA}
+ExcludeNodes {CN},{HK},{MO},{IR},{RU},{KP}
+ExitNodes {JP},{US},{DE},{FR},{NL},{SE}
 StrictNodes 1
 
 #UseBridges 1
