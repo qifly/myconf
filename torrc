@@ -1,7 +1,10 @@
+#
+# Minimal torrc so tor will work out of the box
+#
 User tor
 PIDFile /var/run/tor/tor.pid
 
-SocksPort 9050 
+SocksPort 9050 # what port to open for local application connections
 SocksListenAddress 127.0.0.1
 
 Log notice syslog
@@ -13,7 +16,7 @@ NewCircuitPeriod 15
 NumEntryGuards 8
 
 ExcludeNodes {CN},{HK},{MO},{IR},{RU},{KP}
-ExitNodes {JP},{US},{CA},{DE},{FR},{NL},{SE}
+#ExitNodes {JP},{US},{CA},{DE},{FR},{NL},{SE}
 StrictNodes 1
 
 
@@ -27,3 +30,7 @@ Bridge obfs2 85.214.131.213:1051
 Bridge obfs2 143.215.129.51:35777
 Bridge obfs2 106.187.49.193:53824
 Bridge obfs2 128.31.0.34:1051
+
+#bridge 93.200.230.131:443
+#bridge 31.16.229.89:9001
+#bridge 198.180.167.222:45321
