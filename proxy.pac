@@ -21,8 +21,7 @@ function FindProxyForURL(url, host) {
 /*end twitter*/
 
   if(dnsDomainIs(host,"ytimg.com")) return PROXY;
-  if(host=="www.youtube.com") return PROXY;
-  if(shExpMatch(url,"*cache*.youtube.com*")) return PROXY;
+  if(dnsDomainIs(host,"youtube.com")) return PROXY;
 /*  shExpMatch(url,"*.blogspot.com*")) return PROXY;  */
 
   if(dnsDomainIs(host,"vimeo.com")) return PROXY;
