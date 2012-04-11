@@ -32,6 +32,7 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"sysresccd.org")) return PROXY;
   if(dnsDomainIs(host,"torproject.org")) return PROXY;
 
+  if(dnsDomainIs(host,"allinfa.com")) return PROXY;
   if(dnsDomainIs(host,"chinagfw.org")) return PROXY;
   if(dnsDomainIs(host,"geeksjoy.com")) return PROXY;
   if(dnsDomainIs(host,"wordpress.com")) return PROXY;
