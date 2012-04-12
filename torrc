@@ -15,7 +15,9 @@ KeepalivePeriod 60
 NewCircuitPeriod 15
 NumEntryGuards 8
 
-ExcludeNodes {CN},{HK},{MO},{IR},{RU},{KP}
+ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu}
+ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu}
+#ExcludeNodes {CN},{HK},{MO},{IR},{RU},{KP}
 #ExitNodes {JP},{US},{CA},{DE},{FR},{NL},{SE}
 StrictNodes 1
 
