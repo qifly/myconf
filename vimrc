@@ -12,6 +12,10 @@ set autochdir
 
 filetype on
 filetype plugin on
+au BufRead,BufNewFile *.css set ft=css syntax=css3
+"indent
+filetype plugin indent on
+
 syntax on
 set autoindent
 set smartindent
@@ -21,7 +25,7 @@ set shiftwidth=2
 "this is important while writing code in python
 set expandtab
 
-set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 11
+set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 11
 set tags+=~/.vim/systags
 
 "--configs for taglist

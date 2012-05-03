@@ -1,15 +1,15 @@
-URxvt.geometry:100x40
+URxvt.geometry:90x25
 URxvt.multichar_encoding:utf-8
 URxvt.perl-ext-common:default,tabbed,matcher
 
 URxvt*termName: rxvt-unicode
 
 URxvt.preeditType:Root
-##µ÷Õû´Ë´¦ÉèÖÃÊäÈë·¨
+##è°ƒæ•´æ­¤å¤„è®¾ç½®è¾“å…¥æ³•
 URxvt.inputMethod:fcitx
-##ÑÕÉ«ÉèÖÃ
+##é¢œè‰²è®¾ç½®
 URxvt.depth:32
-##ÖĞÀ¨ºÅÄÚÊı±íÊ¾Í¸Ã÷¶È
+##ä¸­æ‹¬å·å†…æ•°è¡¨ç¤ºé€æ˜åº¦
 URxvt.background: [90]#000000
 URxvt.foreground:#ffffff
 URxvt.colorBD:Gray95
@@ -22,24 +22,24 @@ URxvt.color10:Green2
 URxvt.color12:DodgerBlue
 URxvt.color14:Cyan2
 URxvt.color15:Gray95
-##URL²Ù×÷
+##URLæ“ä½œ
 URxvt.urlLauncher:opera
 URxvt.matcher.button:1
-##¹ö¶¯ÌõÉèÖÃ
+##æ»šåŠ¨æ¡è®¾ç½®
 URxvt.scrollBar:True
 URxvt.scrollBar_right:True
 URxvt.scrollBar_floating:False
-URxvt.scrollstyle:Next
-##¹öÆÁÉèÖÃ
+URxvt.scrollstyle:plain
+##æ»šå±è®¾ç½®
 URxvt.mouseWheelScrollPage:True
 URxvt.scrollTtyOutput: False
 URxvt.scrollWithBuffer: True
 URxvt.scrollTtyKeypress: True
-##¹â±êÉÁË¸
+##å…‰æ ‡é—ªçƒ
 URxvt.cursorBlink:True
 URxvt.saveLines:5000
-##±ß¿ò
+##è¾¹æ¡†
 URxvt.borderLess:      False
-##×ÖÌåÉèÖÃ
-URxvt.font:xft:WenQuanYi Micro Hei Mono:pixelsize=14:style=Regular:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:style=Regular:antialias=true
-URxvt.boldfont:xft:WenQuanYi Micro Hei Mono:pixelsize=14:style=Bold:antialias=true,xft:WenQuanYi Micro Hei Mono:pixelsize=12:style=Bold:antialias=true
+##å­—ä½“è®¾ç½®
+URxvt.font:xft:æ–‡æ³‰é©¿ç­‰å®½æ­£é»‘:size=11:style=Regular:antialias=true,xft:æ–‡æ³‰é©¿ç­‰å®½æ­£é»‘:size=11:style=Regular:antialias=true
+URxvt.boldfont:xft:æ–‡æ³‰é©¿ç­‰å®½æ­£é»‘:size=11:style=Bold:antialias=true,xft:æ–‡æ³‰é©¿ç­‰å®½æ­£é»‘:size=11:style=Bold:antialias=true
