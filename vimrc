@@ -9,6 +9,7 @@ set termencoding=utf-8
 set nocompatible
 set number
 set autochdir
+set cursorline 
 
 filetype on
 filetype plugin on
