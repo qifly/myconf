@@ -43,6 +43,8 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
   if(dnsDomainIs(host,"www.kerneloops.org")) return PROXY;
 
+  if(dnsDomainIs(host,"just-ping.com")) return PROXY;
+
   if(host=="feeds.feedburner.com") return PROXY;
 
   if(host=="goo.gl") return PROXY;
@@ -53,6 +55,7 @@ function FindProxyForURL(url, host) {
   if(host=="t.co") return PROXY;
   if(host=="youtu.be") return PROXY;
   if(host=="j.mp") return PROXY;
+  if(host=="d-h.st") return PROXY;
   return DEFAULT;
 }
 
