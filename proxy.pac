@@ -20,6 +20,10 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"twitpic.com")) return PROXY;
 /*end twitter*/
 
+/*Facebook*/
+  if(dnsDomainIs(host,"facebook.com")) return PROXY;
+/*end Facebook*/
+
   if(dnsDomainIs(host,"ytimg.com")) return PROXY;
   if(dnsDomainIs(host,"youtube.com")) return PROXY;
 /*  shExpMatch(url,"*.blogspot.com*")) return PROXY;  */
@@ -34,6 +38,7 @@ function FindProxyForURL(url, host) {
 
   if(dnsDomainIs(host,"allinfa.com")) return PROXY;
   if(dnsDomainIs(host,"chinagfw.org")) return PROXY;
+  if(dnsDomainIs(host,"t66y.com")) return PROXY;
   if(dnsDomainIs(host,"geeksjoy.com")) return PROXY;
   if(dnsDomainIs(host,"wordpress.com")) return PROXY;
   if(dnsDomainIs(host,"upubuntu.com")) return PROXY;
