@@ -2,7 +2,9 @@ export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 
-xrdb -merge ~/.Xresources
+export PATH=$PATH:/usr/sbin:/sbin
+
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 
 # Created by newuser for 4.3.17
 autoload colors
@@ -51,3 +53,30 @@ zstyle ':completion:' completer _complete _match _approximate
 zstyle ':completion::match:' original only
 zstyle ':completion::approximate:*' max-errors 1 numeric
 
+#功能键修正
+bindkey "\e[1~" beginning-of-line # Home
+bindkey "\e[4~" end-of-line # End
+bindkey "\e[5~" beginning-of-history # PageUp
+bindkey "\e[6~" end-of-history # PageDown
+bindkey "\e[2~" quoted-insert # Ins
+bindkey "\e[3~" delete-char # Del
+bindkey "\e[5C" forward-word
+bindkey "\eOc" emacs-forward-word
+bindkey "\e[5D" backward-word
+bindkey "\eOd" emacs-backward-word
+bindkey "\e\e[C" forward-word
+bindkey "\e\e[D" backward-word
+bindkey "\e[Z" reverse-menu-complete # Shift+Tab
+# for rxvt
+bindkey "\e[7~" beginning-of-line # Home
+bindkey "\e[8~" end-of-line # End
+# for non RH/Debian xterm, can't hurt for RH/DEbian xterm
+bindkey "eOH" beginning-of-line
+bindkey "eOF" end-of-line
+# for freebsd console
+bindkey "e[H" beginning-of-line
+bindkey "e[F" end-of-line
+# completion in the middle of a line
+bindkey '^i' expand-or-complete-prefix
+
+alias ls="ls --color"
