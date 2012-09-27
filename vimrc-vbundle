@@ -1,0 +1,34 @@
+"config for encodings
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb2312,gb18030,latin1
+set termencoding=utf-8
+
+set nocompatible
+set number
+set autochdir
+set cursorline 
+
+syntax on
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+"expandtab to convert tab to space
+"this is important while writing code in python
+set expandtab
+set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 11
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'spring.vim'
+Bundle 'html5.vim'
+Bundle 'ZenCoding.vim'
+Bundle 'css_color.vim'
+Bundle 'hail2u/vim-css3-syntax'
+
+filetype plugin indent on
+colorscheme spring  "gentooish color 
