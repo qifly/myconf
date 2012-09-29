@@ -1,3 +1,6 @@
+"Setup vundle
+"git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 "config for encodings
 set encoding=utf-8
 set fileencoding=utf-8
