@@ -1,5 +1,3 @@
-colorscheme spring  "gentooish color 
-
 "config for encodings
 set encoding=utf-8
 set fileencoding=utf-8
@@ -11,11 +9,8 @@ set number
 set autochdir
 set cursorline 
 
-filetype on
-filetype plugin on
-au BufRead,BufNewFile *.css set ft=css syntax=css3
-"indent
-filetype plugin indent on
+"This will store .swp to /tmp
+set dir=/tmp
 
 syntax on
 set autoindent
@@ -25,24 +20,22 @@ set shiftwidth=2
 "expandtab to convert tab to space
 "this is important while writing code in python
 set expandtab
-
 set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 11
-set tags+=~/.vim/systags
 
-"--configs for taglist
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Right_Window=1
-let Tlist_Auto_Open=1
+Bundle 'gmarik/vundle'
+Bundle 'spring.vim'
+Bundle 'html5.vim'
+Bundle 'ZenCoding.vim'
+Bundle 'css_color.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'nathanaelkane/vim-indent-guides'
 
-"--configs for omnicppcomplete
+filetype plugin indent on
+colorscheme spring  "gentooish color 
 
-set completeopt=menu,menuone
-let OmniCpp_MayCompleteDot = 1 " autocomplete with .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete with ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
-let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
-let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
-let OmniCpp_ShowPrototypeInAbbr = 1 " show function prototype (i.e. parameters) in popup window
+let g:indent_guides_guide_size=1
+au VimEnter * IndentGuidesEnable
