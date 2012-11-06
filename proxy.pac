@@ -48,6 +48,7 @@ function FindProxyForURL(url, host) {
 
   if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
   if(dnsDomainIs(host,"www.kerneloops.org")) return PROXY;
+  if(dnsDomainIs(host,"www.slideshare.net")) return PROXY;
 
   if(dnsDomainIs(host,"just-ping.com")) return PROXY;
 
