@@ -44,6 +44,7 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"upubuntu.com")) return PROXY;
   if(dnsDomainIs(host,"thepiratebay.se")) return PROXY;
   if(dnsDomainIs(host,"thepiratebay.org")) return PROXY;
+  if(dnsDomainIs(host,"voachinese.com")) return PROXY;
 
   if(dnsDomainIs(host,"www.mail-archive.com")) return PROXY;
   if(dnsDomainIs(host,"www.kerneloops.org")) return PROXY;
@@ -51,7 +52,9 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"just-ping.com")) return PROXY;
 
   if(host=="feeds.feedburner.com") return PROXY;
+  if(host=="www.mediafire.com") return PROXY;
 
+  if(dnsDomainIs(host,"bit.ly")) return PROXY;
   if(host=="goo.gl") return PROXY;
   if(host=="ow.ly") return PROXY;
   if(host=="owl.li") return PROXY;
@@ -60,7 +63,7 @@ function FindProxyForURL(url, host) {
   if(host=="t.co") return PROXY;
   if(host=="youtu.be") return PROXY;
   if(host=="j.mp") return PROXY;
-  if(host=="d-h.st") return PROXY;
+  //if(host=="d-h.st") return PROXY;
   return DEFAULT;
 }
 
