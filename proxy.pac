@@ -35,6 +35,7 @@ function FindProxyForURL(url, host) {
   if(dnsDomainIs(host,"chinadigitaltimes.net")) return PROXY;
   if(dnsDomainIs(host,"sysresccd.org")) return PROXY;
   if(dnsDomainIs(host,"torproject.org")) return PROXY;
+  if(dnsDomainIs(host,"engadget.com")) return PROXY;
 
   if(dnsDomainIs(host,"allinfa.com")) return PROXY;
   if(dnsDomainIs(host,"chinagfw.org")) return PROXY;
