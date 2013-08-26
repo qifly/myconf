@@ -8,6 +8,7 @@ function FindProxyForURL(url, host) {
 /*google*/
   if(dnsDomainIs(host,"appspot.com")) return PROXY;
   if(shExpMatch(url,"*.blogspot.*")) return PROXY;
+  if(shExpMatch(url,"*.onion\/*")) return PROXY;
   if(host=="groups.google.com") return PROXY; 
 /*  if(host=="plus.google.com") return PROXY; */
   if(host=="docs.google.com") return PROXY;

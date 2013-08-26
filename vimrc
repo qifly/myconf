@@ -29,10 +29,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'spring.vim'
 Bundle 'html5.vim'
-Bundle 'ZenCoding.vim'
+Bundle 'Emmet.vim'
 Bundle 'css_color.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 colorscheme spring  "gentooish color 
