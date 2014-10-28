@@ -15,24 +15,31 @@ set cursorline
 syntax on
 set autoindent
 set smartindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 "expandtab to convert tab to space
 "this is important while writing code in python
 set expandtab
-set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 11
+set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 12
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'spring.vim'
-Bundle 'html5.vim'
-Bundle 'ZenCoding.vim'
-Bundle 'css_color.vim'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'spring.vim'
+Plugin 'html5.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'css_color.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'python.vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'vcscommand.vim'
+Plugin 'Valloric/YouCompleteMe'
+ 
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
 
 filetype plugin indent on
 colorscheme spring  "gentooish color 
@@ -41,3 +48,11 @@ colorscheme spring  "gentooish color
 let g:indent_guides_guide_size=1
 let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
+
+" NerdTree use <F2> 
+let NERDTreeWinPos='left'  
+let NERDTreeWinSize=31  
+let NERDTreeChDirMode=1  
+map <F2> :NERDTreeToggle<CR>  
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  
+let NERDTreeIgnore=['\~$','\~$']
