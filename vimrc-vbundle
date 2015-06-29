@@ -36,8 +36,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'python.vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'vcscommand.vim'
+Plugin 'mitsuhiko/vim-jinja'
+Plugin 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
- 
 Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
