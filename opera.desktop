@@ -1,0 +1,27 @@
+[Desktop Entry]
+Version=1.0
+Name=Opera stable
+GenericName=Web browser
+Comment=Fast and secure web browser
+TryExec=opera-stable
+Exec=opera-stable --proxy-pac-url=file:///home/uu/local/myconf/i2p.pac %U 
+Terminal=false
+Icon=opera-stable
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;
+Actions=NewWindow;NewPrivateWindow;
+
+X-Desktop-File-Install-Version=0.22
+
+Name[zh_CN]=Opera PAC
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=opera-stable --new-window
+#TargetEnvironment=Unity
+
+[Desktop Action NewPrivateWindow]
+Name=New Private Window
+Exec=opera-stable --private
+#TargetEnvironment=Unity
