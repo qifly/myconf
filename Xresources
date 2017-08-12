@@ -1,8 +1,16 @@
-URxvt.geometry:90x25
+URxvt.geometry:100x26
 URxvt.multichar_encoding:utf-8
 URxvt.perl-ext-common:default,tabbed,matcher
 
 URxvt*termName: rxvt-unicode
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.autohint:   false
+Xft.lcdfilter:  lcddefault
 
 URxvt.preeditType:Root
 ##调整此处设置输入法
@@ -29,7 +37,8 @@ URxvt.color13:#ad7fa8
 URxvt.color14:#34e2e2  
 URxvt.color15:#eeeeec
 ##URL操作
-URxvt.urlLauncher:opera
+URxvt.urlLauncher:firefox
+URxvt.underlineURLs:  True
 URxvt.matcher.button:1
 ##滚动条设置
 URxvt.scrollBar:True
@@ -47,5 +56,5 @@ URxvt.saveLines:5000
 ##边框
 URxvt.borderLess:      False
 ##字体设置
-URxvt.font:xft:文泉驿等宽正黑:size=11:style=Regular:antialias=true,xft:文泉驿等宽正黑:size=11:style=Regular:antialias=true
-URxvt.boldfont:xft:文泉驿等宽正黑:size=11:style=Bold:antialias=true,xft:文泉驿等宽正黑:size=11:style=Bold:antialias=true
+URxvt.font:xft:文泉驿等宽正黑:size=13:style=Regular:antialias=true
+URxvt.boldfont:xft:文泉驿等宽正黑:size=13:style=Bold:antialias=true
