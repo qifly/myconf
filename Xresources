@@ -1,4 +1,4 @@
-URxvt.geometry:100x26
+URxvt.geometry:120x26
 URxvt.multichar_encoding:utf-8
 URxvt.perl-ext-common:default,tabbed,matcher
 
@@ -45,6 +45,9 @@ URxvt.scrollBar:True
 URxvt.scrollBar_right:True
 URxvt.scrollBar_floating:False
 URxvt.scrollstyle:plain
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
 ##滚屏设置
 URxvt.mouseWheelScrollPage:True
 URxvt.scrollTtyOutput: False
@@ -58,3 +61,4 @@ URxvt.borderLess:      False
 ##字体设置
 URxvt.font:xft:文泉驿等宽正黑:size=13:style=Regular:antialias=true
 URxvt.boldfont:xft:文泉驿等宽正黑:size=13:style=Bold:antialias=true
+URxvt.letterSpace: -2
