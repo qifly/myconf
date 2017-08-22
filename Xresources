@@ -2,15 +2,15 @@ URxvt.geometry:120x26
 URxvt.multichar_encoding:utf-8
 URxvt.perl-ext-common:default,tabbed,matcher
 
-URxvt*termName: rxvt-unicode
+URxvt*termName:rxvt-unicode
 
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.autohint:   false
-Xft.lcdfilter:  lcddefault
+Xft.dpi:96
+Xft.antialias:true
+Xft.rgba:rgb
+Xft.hinting:true
+Xft.hintstyle:hintslight
+Xft.autohint:false
+Xft.lcdfilter:lcddefault
 
 URxvt.preeditType:Root
 ##调整此处设置输入法
@@ -18,27 +18,27 @@ URxvt.inputMethod:fcitx
 ##颜色设置
 URxvt.depth:32
 ##中括号内数表示透明度
-URxvt.background:#2e3436  
-URxvt.foreground:#d3d7cf  
-URxvt.color0:#2e3436  
-URxvt.color1:#cc0000  
-URxvt.color2:#4e9a06  
-URxvt.color3:#c4a000  
-URxvt.color4:#3465a4  
-URxvt.color5:#75507b  
-URxvt.color6:#06989a  
-URxvt.color7:#d3d7cf  
-URxvt.color8:#555753  
-URxvt.color9:#ef2929  
-URxvt.color10:#8ae234  
-URxvt.color11:#fce94f  
-URxvt.color12:#729fcf  
-URxvt.color13:#ad7fa8  
-URxvt.color14:#34e2e2  
+URxvt.background:#2e3436
+URxvt.foreground:#d3d7cf
+URxvt.color0:#2e3436
+URxvt.color1:#cc0000
+URxvt.color2:#4e9a06
+URxvt.color3:#c4a000
+URxvt.color4:#3465a4
+URxvt.color5:#75507b
+URxvt.color6:#06989a
+URxvt.color7:#d3d7cf
+URxvt.color8:#555753
+URxvt.color9:#ef2929
+URxvt.color10:#8ae234
+URxvt.color11:#fce94f
+URxvt.color12:#729fcf
+URxvt.color13:#ad7fa8
+URxvt.color14:#34e2e2
 URxvt.color15:#eeeeec
 ##URL操作
 URxvt.urlLauncher:firefox
-URxvt.underlineURLs:  True
+URxvt.underlineURLs:True
 URxvt.matcher.button:1
 ##滚动条设置
 URxvt.scrollBar:True
@@ -50,15 +50,15 @@ URxvt*scrollWithBuffer: true
 
 ##滚屏设置
 URxvt.mouseWheelScrollPage:True
-URxvt.scrollTtyOutput: False
-URxvt.scrollWithBuffer: True
-URxvt.scrollTtyKeypress: True
+URxvt.scrollTtyOutput:False
+URxvt.scrollWithBuffer:True
+URxvt.scrollTtyKeypress:True
 ##光标闪烁
 URxvt.cursorBlink:True
 URxvt.saveLines:5000
 ##边框
-URxvt.borderLess:      False
+URxvt.borderLess:False
 ##字体设置
 URxvt.font:xft:文泉驿等宽正黑:size=13:style=Regular:antialias=true
 URxvt.boldfont:xft:文泉驿等宽正黑:size=13:style=Bold:antialias=true
-URxvt.letterSpace: -2
+URxvt.letterSpace:-2
