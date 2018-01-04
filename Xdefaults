@@ -7,8 +7,8 @@ Xft.antialias:              true
 Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
-Xft.autohint:		    false
-Xft.lcdfilter:		    lcddefault
+Xft.autohint:		        false
+Xft.lcdfilter:		        lcddefault
 
 !-------------------------------------------------------------------------------
 ! URxvt settings
@@ -16,6 +16,8 @@ Xft.lcdfilter:		    lcddefault
 ! More info at:
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
+
+URxvt*termName:             rxvt-unicode
 
 URxvt.depth:                32
 URxvt.geometry:             80x20
@@ -25,7 +27,7 @@ URxvt.fading:               0
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
-URxvt.saveLines:            50
+URxvt.saveLines:            10000
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 
@@ -35,9 +37,10 @@ Urxvt.inputMethod:	    fcitx
 ! Fonts
 URxvt.allow_bold:           true
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-URxvt*font: xft:Noto Sans Mono CJK SC Regular:style=Regular:pixelsize=15
-URxvt*boldFont: xft:Noto Sans Mono CJK SC Bold:style=Bold,Regular:pixelsize=15
-
+! URxvt*font: xft:Noto Sans Mono CJK SC Regular:style=Regular:pixelsize=16
+! URxvt*boldFont: xft:Noto Sans Mono CJK SC Bold:style=Bold,Regular:pixelsize=16
+URxvt*font: xft:Source Code Pro:style=Regular:size=12
+URxvt*boldFont: xft:Source Code Pro:style=Bold:size=12
 ! Fix font space
 URxvt*letterSpace: -1
 
@@ -50,9 +53,10 @@ URxvt.scrollBar_floating:   false
 URxvt*scrollWithBuffer:     true
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
+URxvt.perl-ext-common:      default,tabbed,matcher
 URxvt.matcher.button:       1
 URxvt.urlLauncher:          firefox-bin
+URxvt.underlineURLs:        True
 
 ! Cursor
 URxvt.cursorBlink:          true
@@ -61,6 +65,8 @@ URxvt.cursorUnderline:      false
 
 ! Pointer
 URxvt.pointerBlank:         true
+
+URxvt.borderLess:           false
 
 !!Source http://github.com/altercation/solarized
 
